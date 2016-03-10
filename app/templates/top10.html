@@ -1,0 +1,35 @@
+<ion-view view-title="ReciclApp" hide-back-button="true">
+
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content>
+
+    <div align="center">
+      <img ng-src="images/top10.jpg" style="height: 110px; width: 110px;">
+    </div>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Carrera
+        </div>
+        <select id="carreraSelected" ng-model="datos"
+                ng-change="listarTop10(datos)" >
+          <option value="1">Diseño web</option>
+          <option value="2" selected>Desarrollo de Software</option>
+          <option value="3">Administración de sistemas informaticos</option>
+          <option value="4">Telemática</option>
+          <option value="5">Ciberseguridad</option>
+          <option value="6">Tecnología de bases de datos</option>
+        </select>
+      </label>
+
+    <div class="list">
+      <a class="item item-icon-left" ng-repeat="persona in personas">
+        <i>{{persona[1]}}</i>
+        <span class="badge badge-assertive">{{persona[4]}}</span>
+      </a>
+    </div>
+
+  </ion-content>
+</ion-view>

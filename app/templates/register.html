@@ -1,0 +1,52 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-energized">
+    <h1 class="title">Registrar Usuario</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin(2)">Cerrar</button>
+
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="register()">
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-ios-people placeholder-icon"></i>
+          <input type="text" ng-model="loginData.nombre" placeholder="Nombre Completo" >
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-calendar placeholder-icon"></i>
+          <input type="date" ng-model="loginData.fecha" placeholder="Fecha de nacimiento">
+        </label>
+
+        <label class="item item-input">
+          <i class="icon ion-at placeholder-icon"></i>
+          <input type="text" ng-model="loginData.email" placeholder="Correo electrónico" >
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" ng-model="loginData.username" placeholder="Nombre de usuario" >
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-key placeholder-icon"></i>
+          <input type="password" ng-model="loginData.password" placeholder="Contraseña"  >
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-university placeholder-icon"></i>
+          <select id="carreras" class="item item-input">
+            <option value="1">Diseño web</option>
+            <option value="2">Desarrollo de Software</option>
+            <option value="3">Administración de sistemas informaticos</option>
+            <option value="4">Telemática</option>
+            <option value="5">Ciberseguridad</option>
+            <option value="6">Tecnología de bases de datos</option>
+          </select>
+        </label>
+
+        <label class="item">
+          <button class="button button-block button-outline button-balanced" type="submit">Registrar</button>
+        </label>
+
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,61 @@
+<ion-view class="ReciclApp" cache-view="false" hide-back-button="true">
+  <ion-nav-title>
+    <span>Perfil de Usuario</span>
+  </ion-nav-title>
+
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+
+  <ion-content>
+
+    <img class="user-picture" ng-src="{{usuario.imagen}}" ng-click="ShowPictures()">
+
+    <div class="list card">
+      <div class="item item-icon-right">
+
+        <h2>{{usuario.nombre}}</h2>
+
+        <p>{{usuario.username}}</p>
+        <i class="icon ion-edit" ng-click="openEditProfileModal(usuario.username)"></i>
+      </div>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-university"></i>
+        {{usuario.carrera}}
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-at"></i>
+        {{usuario.email}}
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-android-calendar"></i>
+        {{usuario.fecha}}
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-ios-star"></i>
+        {{usuario.cantPuntos}}
+      </a>
+
+      <a href="#" class="item item-icon-left" ng-click="uploadPicture()">
+        <i class="icon ion-camera"></i>
+        Cambiar foto
+      </a>
+
+      <a href="#" class="item item-icon-left" ng-click="guardarCambios()">
+        <i class="icon ion-checkmark-round"></i>
+        Guardar Cambios
+      </a>
+      <a href="#" class="item item-icon-left" ng-click="logout()">
+        <i class="icon ion-android-exit"></i>
+      Salir
+      </a>
+
+    </div>
+
+  </ion-content>
+  </ion-view>

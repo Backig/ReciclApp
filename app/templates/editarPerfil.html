@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-energized">
+    <h1 class="title">Perfil de Usuario</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closePerfil()">Cerrar</button>
+
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form >
+      <div class="list">
+        <label class="item item-input">
+          <i class="icon ion-ios-people placeholder-icon"></i>
+          <input type="text" ng-model="usuario.nombre" placeholder="Nombre Completo">
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-at placeholder-icon"></i>
+          <input type="text" ng-model="usuario.email" placeholder="Correo electrónico">
+        </label>
+        <label class="item item-input">
+          <i class="icon ion-person placeholder-icon"></i>
+          <input type="text" ng-model="usuario.username" placeholder="Nombre de usuario">
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
+
+
