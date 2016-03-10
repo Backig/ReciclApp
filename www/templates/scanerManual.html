@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-energized">
+    <h1 class="title">Escáner Manual</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeScanner(1)">Cerrar</button>
+
+    </div>
+  </ion-header-bar>
+  <ion-content >
+    <form>
+
+      <div class="card">
+        <div class="item item-divider ion-ios-star">
+          Ingrese su código de barras
+        </div>
+        <div class="item item-text-wrap">
+          <p style="font-size:11px">
+            1. Ingrese el número que aparece en la parte inferior de su código de barras. <br>
+            2. Presione el botón "Aceptar".<br>
+            3. Verifique que la cantidad puntos que el sistema registra es correcta.<br>
+            4. Acumule puntos canjeables por premios de la Universidad Cenfotec.<br>
+          </p>
+
+           <textarea class="ta5" name="comment" id="comment-textarea">
+           </textarea>
+        </div>
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#" ng-click="registrarManual()">
+            <i class="icon ion-android-checkmark-circle balanced"></i>
+            Aceptar
+          </a>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+
+</ion-modal-view>

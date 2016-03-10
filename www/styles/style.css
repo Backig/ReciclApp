@@ -1,0 +1,32 @@
+/* Empty. Add your own CSS if you like */
+.txtAreaCss{
+  border: double;
+  resize: none;
+  width: 400px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.user-picture {
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  display: block; }
+
+/* Rounded Corners */
+.ta5 {
+  border: 3px double #CCCCCC;
+  width: 230px;
+  height: 80px;
+  border-left: 4px solid #CCCCCC;
+  resize: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
